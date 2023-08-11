@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- external css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <title>CSS BASIC</title>
+
+    <!-- embedded css -->
+    <!-- <style>
+        p, div{
+            color: yellowgreen;
+        }
+    </style> -->
+</head>
+<body>
+    <!-- 
+        priority: inline >> embedded >> external 
+        but it depends how we write our css code
+        for example:
+            if we write our external css above the embedded, then embedded css loads first
+            however, if we write our external css below embedded, then external css loads first.
+    -->
+
+    <!-- inline css -->
+    <p style="color: red;">Hello CSS</p>
+    <p style="color: violet;">Another paragraph </p>
+    <div style="color: pink;">I am div</div>
+
+    <!-- embedded css -->
+    <p>Hello CSS</p>
+    <p>Another paragraph </p>
+    <div>I am div</div>
+
+    <!-- external css -->
+    <!-- the below codes load embedded css because of priority -->
+    <p>Hello CSS</p>
+    <p>Another paragraph </p>
+    <div>I am div</div>
+
+    <section>
+        <p class="pg">This is new paragraph</p>
+        <p id="fifth" class="pg">This is fifth paragraph</p>
+        <p>This is one more paragraph</p>
+
+        <div>
+            <p>nested paragraph in div</p>
+            <a href="google.com">Google</a>
+        </div>
+    </section>
+
+    <div>div after section</div>
+
+    <a href="../HTML BASIC/contact.html">Contact Us</a>
+
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis distinctio, voluptate, qui temporibus eos optio autem sed impedit consectetur sequi natus, harum porro adipisci? Quae excepturi iure explicabo hic harum!
+    </p>
+
+    <div>
+        <p>the last paragraph in div</p>
+    </div>
+
+
+
+<!-- 
+
+Flexbox
+
+Flexbox container (display:flex)
+
+ -->
+
+</body>
+</html>

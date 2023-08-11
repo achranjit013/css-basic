@@ -1,0 +1,79 @@
+/* css selector: element, id, class */
+/* priority: id >> class >> element */
+
+/* p, div {
+    color: green;
+} */
+
+/* #fifth {
+    color: aqua;
+}
+
+.pg {
+    color: chocolate;
+    background: black;
+} */
+
+/* 
+    HTML element selector:
+    Descendant (space)
+    Child (>)
+    Adjacent (+)
+    Sibling (~)
+*/
+
+/* Descendent (space) */
+/* section p {
+    color: red;
+} */
+
+/* Child (>) */
+section > p {
+    color: burlywood;
+}
+
+/* Adjacent (+) */
+/* section + div {
+    color: green;
+} */
+
+/* Sibling (~) */
+section ~ div {
+    color: cyan;
+}
+
+/* section div p */
+section > div > p {
+    color: green;
+}
+
+/* HTML attribute selection */
+a[href] {
+    /* color: black; */
+    text-decoration: none;
+    /* font-size: 32px; */
+}
+
+[href="google.com"] {
+    color: red;
+    font-size: 32px;
+}
+
+/* pseudo-elements */
+p::first-letter {
+    font-size: 46px;
+}
+
+/* pseudo-class */
+a:hover {
+    color: green;
+    font-size: 48px;
+}
+
+/* p:nth-child(1) {
+    color: black;
+} */
+
+p:nth-child(odd) {
+    color: black;
+}
